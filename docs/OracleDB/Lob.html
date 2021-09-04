@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: OracleDB::Lob
+  
+    &mdash; Documentation by YARD 0.9.26
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "OracleDB::Lob";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (L)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../OracleDB.html" title="OracleDB (module)">OracleDB</a></span></span>
+     &raquo; 
+    <span class="title">Lob</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: OracleDB::Lob
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">OracleDB::Lob</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/oracledb.rb<span class="defines">,<br />
+  ext/oracledb/rboradb_lob.c</span>
+</dd>
+  </dl>
+  
+</div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#chunk_size-instance_method" title="#chunk_size (instance method)">#<strong>chunk_size</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#close-instance_method" title="#close (instance method)">#<strong>close</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#close_resource-instance_method" title="#close_resource (instance method)">#<strong>close_resource</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#directory_and_file_name-instance_method" title="#directory_and_file_name (instance method)">#<strong>directory_and_file_name</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#file_exists-instance_method" title="#file_exists (instance method)">#<strong>file_exists</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(conn, type, value = nil)  &#x21d2; Lob </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of Lob.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#is_resource_open-instance_method" title="#is_resource_open (instance method)">#<strong>is_resource_open</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#open_resource-instance_method" title="#open_resource (instance method)">#<strong>open_resource</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#read-instance_method" title="#read (instance method)">#<strong>read</strong>(length = nil)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#seek-instance_method" title="#seek (instance method)">#<strong>seek</strong>(offset, whence = IO::SEEK_SET)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#set-instance_method" title="#set (instance method)">#<strong>set</strong>(value)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#set_directory_and_file_name-instance_method" title="#set_directory_and_file_name (instance method)">#<strong>set_directory_and_file_name</strong>(directory_alias, file_name)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#size-instance_method" title="#size (instance method)">#<strong>size</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#trim-instance_method" title="#trim (instance method)">#<strong>trim</strong>(new_size)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#type-instance_method" title="#type (instance method)">#<strong>type</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#write-instance_method" title="#write (instance method)">#<strong>write</strong>(value)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>(conn, type, value = nil)  &#x21d2; <tt><span class='object_link'><a href="" title="OracleDB::Lob (class)">Lob</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of Lob.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+42
+43
+44
+45</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/oracledb.rb', line 42</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_conn'>conn</span><span class='comma'>,</span> <span class='id identifier rubyid_type'>type</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid___initialize'>__initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_conn'>conn</span><span class='comma'>,</span> <span class='id identifier rubyid_type'>type</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="chunk_size-instance_method">
+  
+    #<strong>chunk_size</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+132
+133
+134
+135</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_lob.c', line 132</span>
+
+static VALUE lob_chunk_size(VALUE self)
+{
+    GET_UINT32(Lob, ChunkSize);
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="close-instance_method">
+  
+    #<strong>close</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+112
+113
+114
+115
+116
+117
+118
+119
+120</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_lob.c', line 112</span>
+
+static VALUE lob_close(VALUE self)
+{
+    Lob_t *lob = To_Lob(self);
+
+    if (dpiLob_close(lob-&gt;handle) != DPI_SUCCESS) {
+        RBORADB_RAISE_ERROR(lob);
+    }
+    return Qnil;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="close_resource-instance_method">
+  
+    #<strong>close_resource</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+122
+123
+124
+125
+126
+127
+128
+129
+130</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_lob.c', line 122</span>
+
+static VALUE lob_close_resource(VALUE self)
+{
+    Lob_t *lob = To_Lob(self);
+
+    if (dpiLob_closeResource(lob-&gt;handle) != DPI_SUCCESS) {
+        RBORADB_RAISE_ERROR(lob);
+    }
+    return Qnil;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="directory_and_file_name-instance_method">
+  
+    #<strong>directory_and_file_name</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_lob.c', line 137</span>
+
+static VALUE lob_directory_and_file_name(VALUE self)
+{
+    Lob_t *lob = To_Lob(self);
+    const char *dir, *file;
+    uint32_t dlen, flen;
+
+    if (dpiLob_getDirectoryAndFileName(lob-&gt;handle, &amp;dir, &amp;dlen, &amp;file, &amp;flen) != DPI_SUCCESS) {
+        RBORADB_RAISE_ERROR(lob);
+    }
+    return rb_ary_new_from_args(2, rb_enc_str_new(dir, dlen, rb_utf8_encoding()), rb_enc_str_new(file, flen, rb_utf8_encoding()));
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="file_exists-instance_method">
+  
+    #<strong>file_exists</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+149
+150
+151
+152</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_lob.c', line 149</span>
+
+static VALUE lob_file_exists(VALUE self)
+{
+    GET_BOOL(Lob, FileExists);
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="is_resource_open-instance_method">
+  
+    #<strong>is_resource_open</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+154
+155
+156
+157</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_lob.c', line 154</span>
+
+static VALUE lob_is_resource_open(VALUE self)
+{
+    GET_BOOL(Lob, IsResourceOpen);
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="open_resource-instance_method">
+  
+    #<strong>open_resource</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+169
+170
+171
+172
+173
+174
+175
+176
+177</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_lob.c', line 169</span>
+
+static VALUE lob_open_resource(VALUE self)
+{
+    Lob_t *lob = To_Lob(self);
+
+    if (dpiLob_openResource(lob-&gt;handle) != DPI_SUCCESS) {
+        RBORADB_RAISE_ERROR(lob);
+    }
+    return Qnil;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="read-instance_method">
+  
+    #<strong>read</strong>(length = nil)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/oracledb.rb', line 52</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_read'>read</span><span class='lparen'>(</span><span class='id identifier rubyid_length'>length</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_length'>length</span><span class='period'>.</span><span class='id identifier rubyid_zero?'>zero?</span>
+  <span class='id identifier rubyid_len'>len</span> <span class='op'>=</span> <span class='id identifier rubyid_length'>length</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_length'>length</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_len'>len</span> <span class='op'>=</span> <span class='id identifier rubyid_size'>size</span> <span class='op'>-</span> <span class='ivar'>@pos</span>
+    <span class='kw'>return</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_len'>len</span> <span class='op'>&lt;=</span> <span class='int'>0</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_len'>len</span> <span class='op'>=</span> <span class='id identifier rubyid___read_bytes'>__read_bytes</span><span class='lparen'>(</span><span class='ivar'>@pos</span> <span class='op'>+</span> <span class='int'>1</span><span class='comma'>,</span> <span class='id identifier rubyid_len'>len</span><span class='rparen'>)</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_len'>len</span> <span class='op'>&gt;</span> <span class='int'>0</span>
+    <span class='ivar'>@pos</span> <span class='op'>+=</span> <span class='id identifier rubyid_len'>len</span>
+    <span class='id identifier rubyid_value'>value</span>
+  <span class='kw'>elsif</span> <span class='id identifier rubyid_length'>length</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>else</span>
+    <span class='kw'>nil</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="seek-instance_method">
+  
+    #<strong>seek</strong>(offset, whence = IO::SEEK_SET)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/oracledb.rb', line 70</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_seek'>seek</span><span class='lparen'>(</span><span class='id identifier rubyid_offset'>offset</span><span class='comma'>,</span> <span class='id identifier rubyid_whence'>whence</span> <span class='op'>=</span> <span class='const'>IO</span><span class='op'>::</span><span class='const'>SEEK_SET</span><span class='rparen'>)</span>
+  <span class='kw'>case</span> <span class='id identifier rubyid_whence'>whence</span>
+  <span class='kw'>when</span> <span class='const'>IO</span><span class='op'>::</span><span class='const'>SEEK_SET</span><span class='comma'>,</span> <span class='symbol'>:SET</span>
+    <span class='ivar'>@pos</span> <span class='op'>=</span> <span class='id identifier rubyid_offset'>offset</span>
+  <span class='kw'>when</span> <span class='const'>IO</span><span class='op'>::</span><span class='const'>SEEK_CUR</span><span class='comma'>,</span> <span class='symbol'>:CUR</span>
+    <span class='ivar'>@pos</span> <span class='op'>+=</span> <span class='id identifier rubyid_offset'>offset</span>
+  <span class='kw'>when</span> <span class='const'>IO</span><span class='op'>::</span><span class='const'>SEEK_END</span><span class='comma'>,</span> <span class='symbol'>:END</span>
+    <span class='ivar'>@pos</span> <span class='op'>=</span> <span class='id identifier rubyid_size'>size</span> <span class='op'>+</span> <span class='id identifier rubyid_offset'>offset</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Unkown whence value: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_whence'>whence</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+  <span class='int'>0</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="set-instance_method">
+  
+    #<strong>set</strong>(value)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+47
+48
+49
+50</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/oracledb.rb', line 47</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_len'>len</span> <span class='op'>=</span> <span class='id identifier rubyid___set_from_bytes'>__set_from_bytes</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+  <span class='ivar'>@pos</span> <span class='op'>=</span> <span class='id identifier rubyid_len'>len</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="set_directory_and_file_name-instance_method">
+  
+    #<strong>set_directory_and_file_name</strong>(directory_alias, file_name)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_lob.c', line 208</span>
+
+static VALUE lob_set_directory_and_file_name(VALUE self, VALUE directory_alias, VALUE file_name)
+{
+    Lob_t *lob = To_Lob(self);
+
+    ExportString(directory_alias);
+    ExportString(file_name);
+    if (dpiLob_setDirectoryAndFileName(lob-&gt;handle, RSTRING_PTR(directory_alias), RSTRING_LEN(directory_alias), RSTRING_PTR(file_name), RSTRING_LEN(file_name)) != DPI_SUCCESS) {
+        RBORADB_RAISE_ERROR(lob);
+    }
+    return Qnil;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="size-instance_method">
+  
+    #<strong>size</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+159
+160
+161
+162</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_lob.c', line 159</span>
+
+static VALUE lob_size(VALUE self)
+{
+    GET_UINT64(Lob, Size);
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="trim-instance_method">
+  
+    #<strong>trim</strong>(new_size)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+220
+221
+222
+223
+224
+225
+226
+227
+228</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_lob.c', line 220</span>
+
+static VALUE lob_trim(VALUE self, VALUE new_size)
+{
+    Lob_t *lob = To_Lob(self);
+
+    if (dpiLob_trim(lob-&gt;handle, NUM2ULL(new_size)) != DPI_SUCCESS) {
+        RBORADB_RAISE_ERROR(lob);
+    }
+    return Qnil;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="type-instance_method">
+  
+    #<strong>type</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+164
+165
+166
+167</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_lob.c', line 164</span>
+
+static VALUE lob_type(VALUE self)
+{
+    GET_ENUM(Lob, Type, dpiOracleTypeNum);
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="write-instance_method">
+  
+    #<strong>write</strong>(value)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+84
+85
+86
+87
+88</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/oracledb.rb', line 84</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_write'>write</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_len'>len</span> <span class='op'>=</span> <span class='id identifier rubyid___write_bytes'>__write_bytes</span><span class='lparen'>(</span><span class='ivar'>@pos</span> <span class='op'>+</span> <span class='int'>1</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+  <span class='ivar'>@pos</span> <span class='op'>+=</span> <span class='id identifier rubyid_len'>len</span>
+  <span class='id identifier rubyid_len'>len</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Sat Sep  4 04:43:56 2021 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.26 (ruby-3.0.2).
+</div>
+
+    </div>
+  </body>
+</html>

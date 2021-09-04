@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: OracleDB::Pool
+  
+    &mdash; Documentation by YARD 0.9.26
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "OracleDB::Pool";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (P)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../OracleDB.html" title="OracleDB (module)">OracleDB</a></span></span>
+     &raquo; 
+    <span class="title">Pool</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: OracleDB::Pool
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">OracleDB::Pool</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>ext/oracledb/rboradb_pool.c</dd>
+  </dl>
+  
+</div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#acquire_connection-instance_method" title="#acquire_connection (instance method)">#<strong>acquire_connection</strong>(*args)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#busy_count-instance_method" title="#busy_count (instance method)">#<strong>busy_count</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#close-instance_method" title="#close (instance method)">#<strong>close</strong>(*args)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_mode-instance_method" title="#get_mode (instance method)">#<strong>get_mode</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_mode=-instance_method" title="#get_mode= (instance method)">#<strong>get_mode=</strong>(obj)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(*args)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#max_lifetime_session-instance_method" title="#max_lifetime_session (instance method)">#<strong>max_lifetime_session</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#max_lifetime_session=-instance_method" title="#max_lifetime_session= (instance method)">#<strong>max_lifetime_session=</strong>(obj)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#max_sessions_per_shard-instance_method" title="#max_sessions_per_shard (instance method)">#<strong>max_sessions_per_shard</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#max_sessions_per_shard=-instance_method" title="#max_sessions_per_shard= (instance method)">#<strong>max_sessions_per_shard=</strong>(obj)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#open_count-instance_method" title="#open_count (instance method)">#<strong>open_count</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ping_interval-instance_method" title="#ping_interval (instance method)">#<strong>ping_interval</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ping_interval=-instance_method" title="#ping_interval= (instance method)">#<strong>ping_interval=</strong>(obj)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#reconfigure-instance_method" title="#reconfigure (instance method)">#<strong>reconfigure</strong>(min_sessions, max_sessions, session_increment)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#soda_metadata_cache-instance_method" title="#soda_metadata_cache (instance method)">#<strong>soda_metadata_cache</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#soda_metadata_cache=-instance_method" title="#soda_metadata_cache= (instance method)">#<strong>soda_metadata_cache=</strong>(obj)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#stmt_cache_size-instance_method" title="#stmt_cache_size (instance method)">#<strong>stmt_cache_size</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#stmt_cache_size=-instance_method" title="#stmt_cache_size= (instance method)">#<strong>stmt_cache_size=</strong>(obj)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#timeout-instance_method" title="#timeout (instance method)">#<strong>timeout</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#timeout=-instance_method" title="#timeout= (instance method)">#<strong>timeout=</strong>(obj)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#wait_timeout-instance_method" title="#wait_timeout (instance method)">#<strong>wait_timeout</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#wait_timeout=-instance_method" title="#wait_timeout= (instance method)">#<strong>wait_timeout=</strong>(obj)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>(*args)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 59</span>
+
+static VALUE pool_initialize(int argc, VALUE *argv, VALUE self)
+{
+    Pool_t *pool = To_Pool(self);
+    rbOraDBContext *ctxt;
+    dpiCommonCreateParams common_params;
+    dpiPoolCreateParams pool_params;
+    VALUE ctxt_obj, username, password, connstr, params;
+    VALUE gc_guard = Qnil;
+
+    rb_scan_args(argc, argv, &quot;41&quot;, &amp;ctxt_obj, &amp;username, &amp;password, &amp;connstr, &amp;params);
+    ctxt = rboradb_get_rbOraDBContext(ctxt_obj);
+    dpiContext_initCommonCreateParams(ctxt-&gt;handle, &amp;common_params);
+    dpiContext_initPoolCreateParams(ctxt-&gt;handle, &amp;pool_params);
+    OptExportString(username);
+    OptExportString(password);
+    OptExportString(connstr);
+    if (!NIL_P(params)) {
+        gc_guard = rboradb_set_common_and_dpiPoolCreateParams(&amp;common_params, &amp;pool_params, params);
+    }
+
+    if (rbOraDBPool_create(ctxt-&gt;handle, OPT_RSTRING_PTR(username), OPT_RSTRING_LEN(username),
+                         OPT_RSTRING_PTR(password), OPT_RSTRING_LEN(password),
+                         OPT_RSTRING_PTR(connstr), OPT_RSTRING_LEN(connstr),
+                         &amp;common_params, &amp;pool_params, &amp;pool-&gt;handle) != DPI_SUCCESS) {
+        rboradb_raise_error(ctxt);
+    }
+    RB_GC_GUARD(gc_guard);
+    rbOraDBContext_addRef(ctxt);
+    pool-&gt;ctxt = ctxt;
+    if (pool_params.outPoolName) {
+        pool-&gt;pool_name = rb_external_str_new_with_enc(pool_params.outPoolName, pool_params.outPoolNameLength, rb_utf8_encoding());
+    }
+    return Qnil;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="acquire_connection-instance_method">
+  
+    #<strong>acquire_connection</strong>(*args)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 94</span>
+
+static VALUE pool_acquire_connection(int argc, VALUE *argv, VALUE self)
+{
+    Pool_t *pool = To_Pool(self);
+    dpiConnCreateParams conn_params;
+    VALUE username, password, params;
+    VALUE gc_guard = Qnil;
+    dpiConn *dpi_conn;
+
+    rb_scan_args(argc, argv, &quot;21&quot;, &amp;username, &amp;password, &amp;params);
+    OptExportString(username);
+    OptExportString(password);
+    dpiContext_initConnCreateParams(pool-&gt;ctxt-&gt;handle, &amp;conn_params);
+    if (!NIL_P(params)) {
+        gc_guard = rboradb_set_dpiConnCreateParams(&amp;conn_params, params);
+    }
+
+    if (rbOraDBPool_acquireConnection(pool-&gt;handle,
+                                    OPT_RSTRING_PTR(username), OPT_RSTRING_LEN(username),
+                                    OPT_RSTRING_PTR(password), OPT_RSTRING_LEN(password),
+                                    &amp;conn_params, &amp;dpi_conn) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    RB_GC_GUARD(gc_guard);
+    return rboradb_to_conn(pool-&gt;ctxt, dpi_conn, &amp;conn_params);
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="busy_count-instance_method">
+  
+    #<strong>busy_count</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 132</span>
+
+static VALUE pool_busy_count(VALUE self)
+{
+    Pool_t *pool = To_Pool(self);
+    uint32_t value;
+
+    if (dpiPool_getBusyCount(pool-&gt;handle, &amp;value) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    return UINT2NUM(value);
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="close-instance_method">
+  
+    #<strong>close</strong>(*args)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 120</span>
+
+static VALUE pool_close(int argc, VALUE *argv, VALUE self)
+{
+    Pool_t *pool = To_Pool(self);
+    VALUE mode;
+
+    rb_scan_args(argc, argv, &quot;01&quot;, &amp;mode);
+    if (rbOraDBPool_close(pool-&gt;handle, rboradb_to_dpiPoolCloseMode(mode)) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    return Qnil;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_mode-instance_method">
+  
+    #<strong>get_mode</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 143</span>
+
+static VALUE pool_get_mode(VALUE self)
+{
+    Pool_t *pool = To_Pool(self);
+    dpiPoolGetMode value;
+
+    if (dpiPool_getGetMode(pool-&gt;handle, &amp;value) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    return rboradb_from_dpiPoolGetMode(value);
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_mode=-instance_method">
+  
+    #<strong>get_mode=</strong>(obj)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+154
+155
+156
+157
+158
+159
+160
+161
+162</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 154</span>
+
+static VALUE pool_set_get_mode(VALUE self, VALUE obj)
+{
+    Pool_t *pool = To_Pool(self);
+
+    if (dpiPool_setGetMode(pool-&gt;handle, rboradb_to_dpiPoolGetMode(obj)) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    return Qnil;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="max_lifetime_session-instance_method">
+  
+    #<strong>max_lifetime_session</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 164</span>
+
+static VALUE pool_max_lifetime_session(VALUE self)
+{
+    Pool_t *pool = To_Pool(self);
+    uint32_t value;
+
+    if (dpiPool_getMaxLifetimeSession(pool-&gt;handle, &amp;value) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    return UINT2NUM(value);
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="max_lifetime_session=-instance_method">
+  
+    #<strong>max_lifetime_session=</strong>(obj)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+175
+176
+177
+178
+179
+180
+181
+182
+183</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 175</span>
+
+static VALUE pool_set_max_lifetime_session(VALUE self, VALUE obj)
+{
+    Pool_t *pool = To_Pool(self);
+
+    if (dpiPool_setMaxLifetimeSession(pool-&gt;handle, NUM2UINT(obj)) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    return Qnil;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="max_sessions_per_shard-instance_method">
+  
+    #<strong>max_sessions_per_shard</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 185</span>
+
+static VALUE pool_max_sessions_per_shard(VALUE self)
+{
+    Pool_t *pool = To_Pool(self);
+    uint32_t value;
+
+    if (dpiPool_getMaxSessionsPerShard(pool-&gt;handle, &amp;value) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    return UINT2NUM(value);
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="max_sessions_per_shard=-instance_method">
+  
+    #<strong>max_sessions_per_shard=</strong>(obj)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+196
+197
+198
+199
+200
+201
+202
+203
+204</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 196</span>
+
+static VALUE pool_set_max_sessions_per_shard(VALUE self, VALUE obj)
+{
+    Pool_t *pool = To_Pool(self);
+
+    if (dpiPool_setMaxSessionsPerShard(pool-&gt;handle, NUM2UINT(obj)) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    return Qnil;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="open_count-instance_method">
+  
+    #<strong>open_count</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 206</span>
+
+static VALUE pool_open_count(VALUE self)
+{
+    Pool_t *pool = To_Pool(self);
+    uint32_t value;
+
+    if (dpiPool_getOpenCount(pool-&gt;handle, &amp;value) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    return UINT2NUM(value);
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="ping_interval-instance_method">
+  
+    #<strong>ping_interval</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 311</span>
+
+static VALUE pool_ping_interval(VALUE self)
+{
+    Pool_t *pool = To_Pool(self);
+    int value;
+
+    if (dpiPool_getPingInterval(pool-&gt;handle, &amp;value) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    return INT2NUM(value);
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="ping_interval=-instance_method">
+  
+    #<strong>ping_interval=</strong>(obj)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+322
+323
+324
+325
+326
+327
+328
+329
+330</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 322</span>
+
+static VALUE pool_set_ping_interval(VALUE self, VALUE obj)
+{
+    Pool_t *pool = To_Pool(self);
+
+    if (dpiPool_setPingInterval(pool-&gt;handle, NUM2INT(obj)) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    return Qnil;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="reconfigure-instance_method">
+  
+    #<strong>reconfigure</strong>(min_sessions, max_sessions, session_increment)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+217
+218
+219
+220
+221
+222
+223
+224
+225</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 217</span>
+
+static VALUE pool_reconfigure(VALUE self, VALUE min_sessions, VALUE max_sessions, VALUE session_increment)
+{
+    Pool_t *pool = To_Pool(self);
+
+    if (dpiPool_reconfigure(pool-&gt;handle, NUM2UINT(min_sessions), NUM2UINT(max_sessions), NUM2UINT(session_increment)) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    return Qnil;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="soda_metadata_cache-instance_method">
+  
+    #<strong>soda_metadata_cache</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 227</span>
+
+static VALUE pool_soda_metadata_cache(VALUE self)
+{
+    Pool_t *pool = To_Pool(self);
+    int value;
+
+    if (dpiPool_getSodaMetadataCache(pool-&gt;handle, &amp;value) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    return value ? Qtrue : Qfalse;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="soda_metadata_cache=-instance_method">
+  
+    #<strong>soda_metadata_cache=</strong>(obj)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+238
+239
+240
+241
+242
+243
+244
+245
+246</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 238</span>
+
+static VALUE pool_set_soda_metadata_cache(VALUE self, VALUE obj)
+{
+    Pool_t *pool = To_Pool(self);
+
+    if (dpiPool_setSodaMetadataCache(pool-&gt;handle, RTEST(obj)) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    return Qnil;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="stmt_cache_size-instance_method">
+  
+    #<strong>stmt_cache_size</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 248</span>
+
+static VALUE pool_stmt_cache_size(VALUE self)
+{
+    Pool_t *pool = To_Pool(self);
+    uint32_t value;
+
+    if (dpiPool_getStmtCacheSize(pool-&gt;handle, &amp;value) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    return UINT2NUM(value);
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="stmt_cache_size=-instance_method">
+  
+    #<strong>stmt_cache_size=</strong>(obj)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+259
+260
+261
+262
+263
+264
+265
+266
+267</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 259</span>
+
+static VALUE pool_set_stmt_cache_size(VALUE self, VALUE obj)
+{
+    Pool_t *pool = To_Pool(self);
+
+    if (dpiPool_setStmtCacheSize(pool-&gt;handle, NUM2UINT(obj)) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    return Qnil;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="timeout-instance_method">
+  
+    #<strong>timeout</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 269</span>
+
+static VALUE pool_timeout(VALUE self)
+{
+    Pool_t *pool = To_Pool(self);
+    uint32_t value;
+
+    if (dpiPool_getTimeout(pool-&gt;handle, &amp;value) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    return UINT2NUM(value);
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="timeout=-instance_method">
+  
+    #<strong>timeout=</strong>(obj)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+280
+281
+282
+283
+284
+285
+286
+287
+288</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 280</span>
+
+static VALUE pool_set_timeout(VALUE self, VALUE obj)
+{
+    Pool_t *pool = To_Pool(self);
+
+    if (dpiPool_setTimeout(pool-&gt;handle, NUM2UINT(obj)) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    return Qnil;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="wait_timeout-instance_method">
+  
+    #<strong>wait_timeout</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 290</span>
+
+static VALUE pool_wait_timeout(VALUE self)
+{
+    Pool_t *pool = To_Pool(self);
+    uint32_t value;
+
+    if (dpiPool_getWaitTimeout(pool-&gt;handle, &amp;value) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    return UINT2NUM(value);
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="wait_timeout=-instance_method">
+  
+    #<strong>wait_timeout=</strong>(obj)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="OracleDB::Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+301
+302
+303
+304
+305
+306
+307
+308
+309</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/oracledb/rboradb_pool.c', line 301</span>
+
+static VALUE pool_set_wait_timeout(VALUE self, VALUE obj)
+{
+    Pool_t *pool = To_Pool(self);
+
+    if (dpiPool_setWaitTimeout(pool-&gt;handle, NUM2UINT(obj)) != DPI_SUCCESS) {
+        rboradb_raise_error(pool-&gt;ctxt);
+    }
+    return Qnil;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Sat Sep  4 04:43:57 2021 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.26 (ruby-3.0.2).
+</div>
+
+    </div>
+  </body>
+</html>
