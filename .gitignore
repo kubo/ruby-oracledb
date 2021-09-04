@@ -1,0 +1,16 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+/Gemfile.lock
+/lib/odpi/odpi.so
+_gen_*.c
+_gen_*.h
+*.o
+
+# rspec failure tracking
+.rspec_status

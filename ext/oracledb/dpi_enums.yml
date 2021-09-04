@@ -1,0 +1,319 @@
+dpiAuthMode:
+  bitflag: true
+  dir: to_dpi
+  prefix: DPI_MODE_AUTH_
+  values:
+    - default
+    - sysdba
+    - sysoper
+    - prelim
+    - sysasm
+    - sysbkp
+    - sysdgd
+    - syskmt
+    - sysrac
+
+dpiConnCloseMode:
+  bitflag: true
+  dir: to_dpi
+  prefix: DPI_MODE_CONN_CLOSE_
+  values:
+    - default
+    - drop
+    - retag
+
+dpiCreateMode:
+  bitflag: true
+  dir: to_dpi
+  prefix: DPI_MODE_CREATE_
+  values:
+    - default
+    - threaded
+    - events
+
+dpiDeqMode:
+  bitflag: true
+  dir: both
+  prefix: DPI_MODE_DEQ_
+  values:
+    - browse
+    - locked
+    - remove
+    - remove_no_data
+
+dpiDeqNavigation:
+  bitflag: true
+  dir: both
+  prefix: DPI_DEQ_NAV_
+  values:
+    - first_msg
+    - next_transaction
+    - next_msg
+
+dpiEventType:
+  bitflag: false
+  dir: from_dpi
+  prefix: DPI_EVENT_
+  values:
+    - none
+    - startup
+    - shutdown
+    - shutdown_any
+    - dereg
+    - objchange
+    - querychange
+    - aq
+
+dpiExecMode:
+  bitflag: true
+  dir: to_dpi
+  prefix: DPI_MODE_EXEC_
+  values:
+    - default
+    - describe_only
+    - commit_on_success
+    - batch_errors
+    - parse_only
+    - array_dml_rowcounts
+
+dpiFetchMode:
+   dir: to_dpi
+   prefix: DPI_MODE_FETCH_
+   values:
+     - next
+     - first
+     - last
+     - prior
+     - absolute
+     - relative
+
+dpiMessageDeliveryMode:
+  bitflag: false
+  dir: both
+  prefix: DPI_MODE_MSG_
+  values:
+    - persistent
+    - buffered
+    - persistent_or_buffered
+
+dpiMessageState:
+  bitflag: false
+  dir: from_dpi
+  prefix: DPI_MSG_STATE_
+  values:
+    - ready
+    - waiting
+    - processed
+    - expired
+
+dpiNativeTypeNum:
+  bitflag: false
+  dir: both
+  prefix: DPI_NATIVE_TYPE_
+  values:
+    - int64
+    - uint64
+    - float
+    - double
+    - bytes
+    - timestamp
+    - interval_ds
+    - interval_ym
+    - lob
+    - object
+    - stmt
+    - boolean
+    - rowid
+    - json
+    - json_object
+    - json_array
+    - "null"
+
+dpiOpCode:
+  bitflag: true
+  dir: both
+  prefix: DPI_OPCODE_
+  values:
+    - all_rows
+    - insert
+    - update
+    - delete
+    - alter
+    - drop
+    - unknown
+
+dpiOracleTypeNum:
+  bitflag: false
+  dir: both
+  prefix: DPI_ORACLE_TYPE_
+  values:
+    - none
+    - varchar
+    - nvarchar
+    - char
+    - nchar
+    - rowid
+    - raw
+    - native_float
+    - native_double
+    - native_int
+    - number
+    - date
+    - timestamp
+    - timestamp_tz
+    - timestamp_ltz
+    - interval_ds
+    - interval_ym
+    - clob
+    - nclob
+    - blob
+    - bfile
+    - stmt
+    - boolean
+    - object
+    - long_varchar
+    - long_raw
+    - native_uint
+    - json
+    - json_object
+    - json_array
+
+dpiPoolCloseMode:
+  bitflag: true
+  dir: to_dpi
+  prefix: DPI_MODE_POOL_CLOSE_
+  values:
+    - default
+    - force
+
+dpiPoolGetMode:
+  bitflag: false
+  dir: both
+  prefix: DPI_MODE_POOL_GET_
+  values:
+    - wait
+    - nowait
+    - forceget
+    - timedwait
+
+dpiPurity:
+  bitflag: false
+  dir: to_dpi
+  prefix: DPI_PURITY_
+  values:
+    - default
+    - new
+    - self
+
+dpiShutdownMode:
+  bitflag: false
+  dir: to_dpi
+  prefix: DPI_MODE_SHUTDOWN_
+  values:
+    - default
+    - transactional
+    - transactional_local
+    - immediate
+    - abort
+    - final
+
+dpiStartupMode:
+  bitflag: true
+  dir: to_dpi
+  prefix: DPI_MODE_STARTUP_
+  values:
+    - default
+    - force
+    - restrict
+
+dpiStatementType:
+  bitflag: false
+  dir: from_dpi
+  prefix: DPI_STMT_TYPE_
+  values:
+    - unknown
+    - select
+    - update
+    - delete
+    - insert
+    - create
+    - drop
+    - alter
+    - begin
+    - declare
+    - call
+    - explain_plan
+    - merge
+    - rollback
+    - commit
+
+dpiSubscrGroupingClass:
+  bitflag: false
+  dir: to_dpi
+  prefix: DPI_SUBSCR_GROUPING_CLASS_
+  values:
+    - time
+
+dpiSubscrGroupingType:
+  bitflag: false
+  dir: to_dpi
+  prefix: DPI_SUBSCR_GROUPING_TYPE_
+  values:
+    - summary
+    - last
+
+dpiSubscrNamespace:
+  bitflag: false
+  dir: to_dpi
+  prefix: DPI_SUBSCR_NAMESPACE_
+  values:
+    - aq
+    - dbchange
+
+dpiSubscrProtocol:
+  bitflag: false
+  dir: to_dpi
+  prefix: DPI_SUBSCR_PROTO_
+  values:
+    - callback
+    - mail
+    - plsql
+    - http
+
+dpiSubscrQOS:
+  bitflag: true
+  dir: to_dpi
+  prefix: DPI_SUBSCR_QOS_
+  values:
+    - reliable
+    - dereg_nfy
+    - rowids
+    - query
+    - best_effort
+
+dpiVisibility:
+  bitflag: false
+  dir: both
+  prefix: DPI_VISIBILITY_
+  values:
+    - immediate
+    - on_commit
+
+OciAttrDataType:
+  dir: to_dpi
+  prefix: RBORADB_OCI_ATTR_DATA_TYPE_
+  values:
+    - boolean
+    - text
+    - ub1
+    - ub2
+    - ub4
+    - ub8
+
+OciHandleType:
+  dir: to_dpi
+  prefix: RBORADB_OCI_HTYPE_
+  values:
+    - svcctx
+    - server
+    - session

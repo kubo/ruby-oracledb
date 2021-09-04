@@ -1,0 +1,204 @@
+dpiConn_beginDistribTrans:
+  args:
+    - dpiConn *conn
+    - long formatId
+    - const char *transactionId
+    - uint32_t transactionIdLength
+    - const char *branchId
+    - uint32_t branchIdLength
+
+dpiConn_breakExecution:
+  break: no
+  args:
+    - dpiConn *conn
+
+dpiConn_changePassword:
+  args:
+    - dpiConn *conn
+    - const char *userName
+    - uint32_t userNameLength
+    - const char *oldPassword
+    - uint32_t oldPasswordLength
+    - const char *newPassword
+    - uint32_t newPasswordLength
+
+dpiConn_close:
+  args:
+    - dpiConn *conn
+    - dpiConnCloseMode mode
+    - const char *tag
+    - uint32_t tagLength
+
+dpiConn_commit:
+  args:
+    - dpiConn *conn
+
+dpiConn_create:
+  break: no
+  args:
+    - const dpiContext *context
+    - const char *userName
+    - uint32_t userNameLength
+    - const char *password
+    - uint32_t passwordLength
+    - const char *connectString
+    - uint32_t connectStringLength
+    - const dpiCommonCreateParams *commonParams
+    - dpiConnCreateParams *createParams
+    - dpiConn **conn
+
+dpiConn_deqObject:
+  args:
+    - dpiConn *conn
+    - const char *queueName
+    - uint32_t queueNameLength
+    - dpiDeqOptions *options
+    - dpiMsgProps *props
+    - dpiObject *payload
+    - const char **msgId
+    - uint32_t *msgIdLength
+
+dpiConn_enqObject:
+  args:
+    - dpiConn *conn
+    - const char *queueName
+    - uint32_t queueNameLength
+    - dpiEnqOptions *options
+    - dpiMsgProps *props
+    - dpiObject *payload
+    - const char **msgId
+    - uint32_t *msgIdLength
+
+dpiConn_getObjectType:
+  args:
+    - dpiConn *conn
+    - const char *name
+    - uint32_t nameLength
+    - dpiObjectType **objType
+
+dpiConn_getServerVersion:
+  args:
+    - dpiConn *conn
+    - const char **releaseString
+    - uint32_t *releaseStringLength
+    - dpiVersionInfo *versionInfo
+
+dpiConn_newTempLob:
+  args:
+    - dpiConn *conn
+    - dpiOracleTypeNum lobType
+    - dpiLob **lob
+
+dpiConn_ping:
+  args:
+    - dpiConn *conn
+
+dpiConn_prepareDistribTrans:
+  args:
+    - dpiConn *conn
+    - int *commitNeeded
+
+dpiConn_rollback:
+  args:
+    - dpiConn *conn
+
+dpiConn_shutdownDatabase:
+  args:
+    - dpiConn *conn
+    - dpiShutdownMode mode
+
+dpiConn_startupDatabaseWithPfile:
+  args:
+    - dpiConn *conn
+    - const char *pfile
+    - uint32_t pfileLength
+    - dpiStartupMode mode
+
+dpiConn_subscribe:
+  args:
+    - dpiConn *conn
+    - dpiSubscrCreateParams *params
+    - dpiSubscr **subscr
+
+dpiConn_unsubscribe:
+  args:
+    - dpiConn *conn
+    - dpiSubscr *subscr
+
+dpiStmt_execute:
+  args:
+    - dpiStmt *stmt
+    - dpiExecMode mode
+    - uint32_t *numQueryColumns
+
+dpiStmt_executeMany:
+  args:
+    - dpiStmt *stmt
+    - dpiExecMode mode
+    - uint32_t numIters
+
+dpiStmt_fetch:
+  args:
+    - dpiStmt *stmt
+    - int *found
+    - uint32_t *bufferRowIndex
+
+dpiStmt_scroll:
+  args:
+   - dpiStmt *stmt
+   - dpiFetchMode mode
+   - int32_t offset
+   - int32_t rowCountOffset
+
+dpiPool_acquireConnection:
+  break: no
+  args:
+    - dpiPool *pool
+    - const char *userName
+    - uint32_t userNameLength
+    - const char *password
+    - uint32_t passwordLength
+    - dpiConnCreateParams *createParams
+    - dpiConn **conn
+
+dpiPool_close:
+  break: no
+  args:
+    - dpiPool *pool
+    - dpiPoolCloseMode closeMode
+
+dpiPool_create:
+  break: no
+  args:
+    - const dpiContext *context
+    - const char *userName
+    - uint32_t userNameLength
+    - const char *password
+    - uint32_t passwordLength
+    - const char *connectString
+    - uint32_t connectStringLength
+    - const dpiCommonCreateParams *commonParams
+    - dpiPoolCreateParams *createParams
+    - dpiPool **pool
+
+dpiQueue_deqMany:
+  args:
+    - dpiQueue *queue
+    - uint32_t *numProps
+    - dpiMsgProps **props
+
+dpiQueue_deqOne:
+  args:
+    - dpiQueue *queue
+    - dpiMsgProps **props
+
+dpiQueue_enqMany:
+  args:
+    - dpiQueue *queue
+    - uint32_t numProps
+    - dpiMsgProps **props
+
+dpiQueue_enqOne:
+  args:
+    - dpiQueue *queue
+    - dpiMsgProps *props
