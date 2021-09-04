@@ -20,7 +20,7 @@ And then execute:
 
 ## Documents
 
-[rubydoc.info](https://www.rubydoc.info/github/kubo/ruby-oracledb)
+[github pages](https://www.jiubao.org/ruby-oracledb/)
 
 ## Supported versions
 
