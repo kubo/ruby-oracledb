@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["kubo@jiubao.org"]
 
   spec.summary       = %q{Ruby interface for Oracle based on ODPI-C}
-  spec.homepage      = "http://www.rubydoc.info/github/kubo/ruby-oracledb"
+  spec.homepage      = "https://www.jiubao.org/ruby-oracledb/"
   spec.required_ruby_version = Gem::Requirement.new(">= 3.0.0")
 
   spec.metadata["homepage_uri"] = spec.homepage

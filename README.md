@@ -11,7 +11,7 @@ Extremely unstable
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'oracledb', git: 'https://github.com/kubo/ruby-oracledb.git'
+gem 'oracledb', git: 'https://github.com/kubo/ruby-oracledb.git', submodules: true
 ```
 
 And then execute:
